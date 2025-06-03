@@ -24,6 +24,7 @@ conda create --name bg_sub
 conda activate bg_sub
 conda install pip
 pip install opencv-python
+pip install tqdm
 ```
 
 Now go to the directory of the "bg_subtraction.py" file and run it:
@@ -36,6 +37,10 @@ python bg_subtraction.py
 - Select Frames you want to use for the background model
 - Adjust the threshold manually in the preview mode
 - After subtracting the background the new video will be stored using ffmpeg
+
+
+<img src="./images/frame_selection.png" alt="Alt text" title="Background Frames Selection" width="600"/><br>
+<img src="./images/thresholding.png" alt="Alt text" title="Thresholding" width="600"/>
 
 
 ----------

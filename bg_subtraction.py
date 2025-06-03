@@ -11,7 +11,7 @@ import subprocess
 # SETTINGS
 
 # Make sure to set the correct path to your ffmpeg.exe (windows)
-ffmpeg_path = r"Your\Path\...\ffmpeg\bin\ffmpeg.exe"
+ffmpeg_path = r"C:\FFmpegTool\bin\ffmpeg.exe"
 
 # ======================================================================================================================
 # ######################################################################################################################

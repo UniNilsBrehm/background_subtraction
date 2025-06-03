@@ -6,6 +6,16 @@ import tkinter as tk
 from tkinter import filedialog, ttk
 import subprocess
 
+# ######################################################################################################################
+# ======================================================================================================================
+# SETTINGS
+
+# Make sure to set the correct path to your ffmpeg.exe (windows)
+ffmpeg_path = r"Your\Path\...\ffmpeg\bin\ffmpeg.exe"
+
+# ======================================================================================================================
+# ######################################################################################################################
+
 # --- Contrast enhancement function ---
 def enhance_contrast(gray_frame):
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
@@ -113,7 +123,6 @@ background = np.median(bg_frames, axis=0).astype(np.uint8)
 
 # --- FFmpeg Streaming Setup ---
 output_path = input_path.rsplit('.', 1)[0] + "_cleaned_compressed.mp4"
-ffmpeg_path = r"C:\Users\nb1079\Desktop\ffmpeg\bin\ffmpeg.exe"
 
 ffmpeg_cmd = [
     ffmpeg_path,

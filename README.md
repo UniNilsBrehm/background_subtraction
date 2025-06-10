@@ -42,6 +42,12 @@ python bg_subtraction.py
 <img src="./images/frame_selection.png" alt="Alt text" title="Background Frames Selection" width="600"/><br>
 <img src="./images/thresholding.png" alt="Alt text" title="Thresholding" width="600"/>
 
+## Update
+There is now a second version available. Here the user can select a frame with the object of interest (e.g. the tail) in the default position (e.g. tail in the center)
+and a frame where the object of interest (e.g. the tail) is clearly off center.
+The user is asked to draw the outline of the object of interest in both frames. This information is then used to generate a background model for subtraction.
+If you want to try this out, run the file "bg_subtraction_cutout_method.py".
+
 
 ----------
 Nils Brehm - 2025
